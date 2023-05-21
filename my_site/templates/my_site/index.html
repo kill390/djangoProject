@@ -1,0 +1,16 @@
+
+<body>
+
+<strong> Hello World! </strong>
+
+{% if count_list %}
+    <ul>
+        {%  for count in count_list  %}
+            <li> <a href="count/{{ count.id }}" > {{  count.counter }}</a> </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>no data</p>
+{% endif %}
+
+</body>
