@@ -22,6 +22,6 @@ from django.views.generic import TemplateView
 urlpatterns = [
     # redirect to staatic file
     path('', include('my_site.urls')),
-    path('my_site/', include('my_site.urls'), name='my_site'),
+    path('my_site/', include('my_site.urls')),
     path('admin/', admin.site.urls),
 ]
